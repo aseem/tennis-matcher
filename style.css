@@ -119,6 +119,12 @@ button:focus {
   width: 800px;
 }
 
+td,
+th {
+  border: solid 2px lightgrey;
+  font-size: x-large;
+}
+
 .modal-container {
   background-color: rgba(0, 0, 0, 0.6);
   display: none;
