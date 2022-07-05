@@ -44,8 +44,13 @@ window.addEventListener("click", (e) =>
   e.target == modal ? modal.classList.remove("show-modal") : false
 );
 
+// Load players initially
+window.onload = function () {
+  load_players();
+};
+
 // Toggle players content
-nav_players.addEventListener("click", () => {
+function load_players() {
   player_table.innerHTML = "";
 
   var header_row = document.createElement("tr");
@@ -71,6 +76,10 @@ nav_players.addEventListener("click", () => {
 
   document.getElementById("main-container").innerHTML =
     document.getElementById("players-container").innerHTML;
+}
+
+nav_players.addEventListener("click", () => {
+  load_players();
   document.body.classList.toggle("show-nav");
 });
 
