@@ -83,10 +83,30 @@ nav_players.addEventListener("click", () => {
   document.body.classList.toggle("show-nav");
 });
 
+function add_select_players() {
+  var select_boxes = document.getElementsByClassName("players-select");
+  console.log(select_boxes);
+  // select_boxes.array.forEach((element) => {
+  //   console.log(element);
+  // });
+
+  for (var j = 0; j < select_boxes.length; j++) {
+    var selectBox = select_boxes[j];
+    for (var i = 0; i < player_scores.length; i++) {
+      var opt = document.createElement("option");
+      opt.textContent = player_scores[i]["player"];
+      opt.value = player_scores[i]["player"];
+      selectBox.appendChild(opt);
+    }
+  }
+}
+
 // Toggle round content
 nav_round1.addEventListener("click", () => {
   document.getElementById("main-container").innerHTML =
     document.getElementById("round1-container").innerHTML;
+
+  add_select_players();
   document.body.classList.toggle("show-nav");
 });
 
