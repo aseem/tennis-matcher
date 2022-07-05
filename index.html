@@ -21,13 +21,14 @@
       </div>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Players</a></li>
-        <li><a href="#">Round 1</a></li>
-        <li><a href="#">Round 2</a></li>
-        <li><a href="#">Round 3</a></li>
+        <li><a id="nav-players" href="#">Players</a></li>
+        <li><a id="nav-round1" href="#">Round 1</a></li>
+        <li><a id="nav-round2" href="#">Round 2</a></li>
+        <li><a id="nav-round3" href="#">Round 3</a></li>
       </ul>
     </nav>
 
+    <!--- Header -->
     <header>
       <button id="toggle" class="toggle">
         <i class="fa fa-bars fa-2x"></i>
@@ -36,43 +37,27 @@
       <br />
       <button class="cta-btn" id="open">New Session</button>
     </header>
-    <div class="container">
-      <h2>What is this landing page about?</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi
-        commodi iste quos debitis reprehenderit quod dolore sunt quis quibusdam
-        a, nihil itaque similique, nisi, fuga ea expedita! Accusamus, eos.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-        perspiciatis suscipit architecto inventore in eum quae atque sapiente
-        eveniet harum.
-      </p>
 
-      <h2>Tell Me More</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
-        incidunt voluptatem ratione, et est saepe vitae maxime, ipsam adipisci
-        culpa in deleniti quia possimus quibusdam exercitationem ducimus, aut
-        earum commodi! Libero porro atque eveniet autem fuga, consectetur
-        facilis unde tempore.
-      </p>
+    <!--- Main Content -->
+    <div id="main-container" class="container"></div>
 
-      <h2>Benefits</h2>
+    <div id="players-container" style="visibility: hidden">
+      <h2>Players</h2>
       <ul>
-        <li>Lifetime Access</li>
-        <li>30 Day Money Back</li>
-        <li>Tailored Customer Support</li>
+        <li>Player 1</li>
+        <li>Player 2</li>
+        <li>Player 3</li>
+        <li>Player 4</li>
       </ul>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum unde
-        libero aperiam quae odio laboriosam repellendus facere, eum nisi vero
-        odit aliquid ipsa consequuntur placeat ab perspiciatis eligendi itaque
-        tempore iure sunt, facilis at temporibus fuga. Rerum veritatis cumque
-        quis omnis velit temporibus quas sunt distinctio tenetur accusamus?
-        Inventore, praesentium.
-      </p>
+    </div>
+    <div id="round1-container" style="visibility: hidden">
+      <h2>Round1</h2>
+    </div>
+    <div id="round2-container" style="visibility: hidden">
+      <h2>Round2</h2>
+    </div>
+    <div id="round3-container" style="visibility: hidden">
+      <h2>Round3</h2>
     </div>
 
     <!--- Modal -->
